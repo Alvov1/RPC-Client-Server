@@ -1,0 +1,3 @@
+﻿  Server.cpp
+E:\BSIT\Laboratornaya_1\Server\Server\Server.cpp(62,11): warning C4018: '<': signed/unsigned mismatch
+  Server.vcxproj -> E:\BSIT\Laboratornaya_1\Server\Debug\Server.exe
