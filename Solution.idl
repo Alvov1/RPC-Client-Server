@@ -1,0 +1,34 @@
+[
+	// A unique identifier that distinguishes this
+	// interface from other interfaces.
+	uuid(bee393b2-53ad-11ec-bf63-0242ac130002),
+
+	// This is version 1.0 of this interface.
+	version(1.0),
+
+	// This interface will use an implicit binding
+	// handle named hExample1Binding.
+	implicit_handle(handle_t hSolutionBinding)
+]
+interface Solution // The interface is named Example1
+{
+	int LoginUserRequest(
+		[in, size_is(32)]unsigned char* login,
+		[in, size_is(32)]unsigned char* password);
+
+	void RemoveFileRequest(
+		[in, string] const unsigned char* filename);
+
+	unsigned long ServerToHostRequest(
+		[in, string] const unsigned char* iFilename,
+		[in, out, size_is(bfSize)] unsigned char* buffer,
+		[in] unsigned long bfSize);
+
+	int HostToServerRequest(
+		[in, string] const unsigned char* iFilename,
+		[in, out, size_is(bfSize)] unsigned char* buffer,
+		[in] unsigned long bfSize,
+		[in] unsigned long start);
+
+	void LogoutUserRequest();
+}
