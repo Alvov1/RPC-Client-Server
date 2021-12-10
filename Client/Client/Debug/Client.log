@@ -1,0 +1,3 @@
+﻿  Client.cpp
+E:\BSIT\Laboratornaya_1\Client\Client\Client.cpp(148,32): warning C4101: 'except': unreferenced local variable
+  Client.vcxproj -> E:\BSIT\Laboratornaya_1\Client\Debug\Client.exe
